@@ -5,7 +5,7 @@
 ## - If CXXBASICS_CACHE_FOLDER(passed by the user or detected here) is not a directory,
 ##   it will be unset
 
-cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.6 FATAL_ERROR)
 
 opt_ifndef("CXXBasics user cache"  PATH  ""  CXXBASICS_CACHE_FOLDER)
 if(NOT DEFINED CXXBASICS_CACHE_FOLDER OR NOT IS_DIRECTORY "${CXXBASICS_CACHE_FOLDER}")

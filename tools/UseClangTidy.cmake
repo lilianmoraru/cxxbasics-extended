@@ -1,9 +1,9 @@
 # This module adds the "cxxbasics_tidy_target" macro
 # This macro can always be used, even if ClangTidy is disabled or not found - it will be ignored in these situations
 # CXXBASICS_USE_TIDY(BOOL) - enable or disable the ClangTidy target(disabled by default)
-# CXXBASICS_TIDY_CHECK(STRING) - configure the desired checks(uses a reasonable default)
+# CXXBASICS_TIDY_CHECKS(STRING) - configure the desired checks(uses a reasonable default)
 
-cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.6 FATAL_ERROR)
 
 opt_ifndef("Use clang-tidy"  BOOL  OFF  CXXBASICS_USE_TIDY)
 if(CMAKE_HOST_UNIX AND CXXBASICS_USE_TIDY)
